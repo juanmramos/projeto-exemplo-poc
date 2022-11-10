@@ -1,0 +1,58 @@
+2022-11-10 11:24:23.970  INFO 96985 --- [restartedMain] br.com.novaxs.crs.CrsApplication         : No active profile set, falling back to default profiles: default
+2022-11-10 11:24:25.831  INFO 96985 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-11-10 11:24:25.956  INFO 96985 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 3 repository interfaces.
+2022-11-10 11:24:26.510  INFO 96985 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=151fe58d-9d85-3767-a1e0-20890c242903
+2022-11-10 11:24:26.669  INFO 96985 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5cd54ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-10 11:24:26.709  INFO 96985 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c1e757a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-10 11:24:27.373  INFO 96985 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-10 11:24:27.413  INFO 96985 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-10 11:24:27.414  INFO 96985 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-11-10 11:24:27.544  INFO 96985 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-10 11:24:27.544  INFO 96985 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3518 ms
+2022-11-10 11:24:28.766  INFO 96985 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-11-10 11:24:28.807  INFO 96985 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-11-10 11:24:28.808  INFO 96985 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-11-10 11:24:28.896  INFO 96985 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-11-10 11:24:29.005  INFO 96985 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-11-10 11:24:29.021  INFO 96985 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2022-11-10 11:24:29.027  INFO 96985 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@599245c8
+2022-11-10 11:24:29.650  INFO 96985 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-10 11:24:29.870  INFO 96985 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-10 11:24:30.246  WARN 96985 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-11-10 11:24:30.250  WARN 96985 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_4xad1enskw4j1t2866f7sodrx" of relation "user_entity" does not exist, skipping
+2022-11-10 11:24:30.285  INFO 96985 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 11:24:30.401  INFO 96985 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-10 11:24:31.867  WARN 96985 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-10 11:24:32.305  INFO 96985 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2022-11-10 11:24:32.599  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], []
+2022-11-10 11:24:32.600  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2022-11-10 11:24:32.600  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2022-11-10 11:24:32.600  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/**'], []
+2022-11-10 11:24:32.600  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='swagger-resources/**'], []
+2022-11-10 11:24:32.635  INFO 96985 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@296550e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@af7b0e9, org.springframework.security.web.header.HeaderWriterFilter@d753e5a, org.springframework.security.web.authentication.logout.LogoutFilter@7dba9914, br.com.novaxs.crs.configuration.security.AuthenticationTokenFilter@56588bcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cf52352, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@926ab46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dba23b3, org.springframework.security.web.session.SessionManagementFilter@7918753a, org.springframework.security.web.access.ExceptionTranslationFilter@6317ae44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5db2b887]
+2022-11-10 11:24:32.672  INFO 96985 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-11-10 11:24:32.685  WARN 96985 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-10 11:24:32.685  INFO 96985 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-10 11:24:32.689  WARN 96985 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-10 11:24:32.692  INFO 96985 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-10 11:24:32.969  INFO 96985 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-10 11:24:33.470  INFO 96985 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-10 11:24:33.483  INFO 96985 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-10 11:24:33.514  INFO 96985 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-10 11:24:33.964  INFO 96985 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createClientUsingPOST_1
+2022-11-10 11:24:33.976  INFO 96985 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteClientUsingDELETE_1
+2022-11-10 11:24:33.988  INFO 96985 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByAllClientUsingGET_1
+2022-11-10 11:24:33.992  INFO 96985 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdClientUsingGET_1
+2022-11-10 11:24:33.997  INFO 96985 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByListImoveisUsingGET_1
+2022-11-10 11:24:34.049  INFO 96985 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-10 11:24:34.056  INFO 96985 --- [restartedMain] br.com.novaxs.crs.CrsApplication         : Started CrsApplication in 11.511 seconds (JVM running for 13.08)
+2022-11-10 11:24:34.433  INFO 96985 --- [RMI TCP Connection(3)-192.168.1.3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 11:24:34.437  INFO 96985 --- [RMI TCP Connection(3)-192.168.1.3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-10 11:24:34.471  INFO 96985 --- [RMI TCP Connection(3)-192.168.1.3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2022-11-10 11:54:30.157  WARN 96985 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s791ms), soft-evicting connections from pool.
+2022-11-10 12:25:58.200  INFO 96985 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-10 12:25:58.258  INFO 96985 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 12:25:58.315  INFO 96985 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-10 12:25:58.366  INFO 96985 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

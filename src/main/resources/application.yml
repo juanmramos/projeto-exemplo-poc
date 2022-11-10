@@ -1,0 +1,28 @@
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: update
+  show-sql: true
+
+spring.datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/crs
+  username: postgres
+  password: admin
+spring:
+  sql:
+    init:
+      platform: postgres
+  application:
+    name: API CRS
+    version: 1.0.0
+    description: API CRS para Portal
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    generate-ddl: true
+  datasource:
+    hikari:
+      schema: crs
+server:
+  port: ${SERVER_PORT:8080}
